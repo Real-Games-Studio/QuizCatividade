@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _titleGameText: {fileID: 985135792}
   _winText: {fileID: 1850365753}
+  _reloadSceneFeel: {fileID: 1825036846}
 --- !u!1 &52043869
 GameObject:
   m_ObjectHideFlags: 0
@@ -5852,7 +5853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -307.00024
+      value: -307.0002
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9825,7 +9826,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2147280643
 RectTransform:
   m_ObjectHideFlags: 0

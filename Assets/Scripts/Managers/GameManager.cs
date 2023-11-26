@@ -1,3 +1,4 @@
+using MoreMountains.Feedbacks;
 using TMPro;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI _titleGameText;
     [SerializeField] private TextMeshProUGUI _winText;
+    [SerializeField] private MMF_Player _reloadSceneFeel;
 
     private bool canStartTimer = false;
     public bool CanStartTimer { get => canStartTimer; set => canStartTimer = value; }
@@ -18,6 +20,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _titleGameText.text = _gameConfig.TituloJogo;
+        _reloadSceneFeel.InitialDelay = _gameConfig.TempoParaReniciar;
     }
 
     public void UpdateWinText()
