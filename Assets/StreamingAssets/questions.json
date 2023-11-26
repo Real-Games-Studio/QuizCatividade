@@ -1,0 +1,401 @@
+{
+    "numberOfAnswers": 5,
+    "perguntas": [
+        {
+            "pergunta": "Na hora de descartar tambores e bombonas você deve?",
+            "respostas": [
+                "Retirar o nome da Colgate das embalagens",
+                "Manter no nome do produto químico que tinha na embalagem",
+                "Levar as embalagens para a área de descarte correto",
+                "Verificar se a embalagem está vazia",
+                "Todas estão corretas",
+                "Manter a embalagem fechada"
+            ],
+            "respostaCerta": "Todas estão corretas"
+        },
+        {
+            "pergunta": "Quais os cuidados que devemos ter nos pátios?",
+            "respostas": [
+                "Obrigatório uso de vestimenta refletiva",
+                "Atravessar na faixa de pedestre",
+                "Atenção com empilhadeiras e caminhões",
+                "Respeitar o limite de velocidade",
+                "Todas estão corretas",
+                "Não circular em áreas de movimentação de materiais"
+            ],
+            "respostaCerta": "Todas estão corretas"
+        },
+        {
+            "pergunta": "Como neutralizar as fontes de energias perigosas nas máquinas e equipamentos? Qual a alternativa CORRETA?",
+            "respostas": [
+                "Localizar o Swis de LOTO do equipamento",
+                "Identificar as fontes de energias",
+                "Cada funcionário deverá colocar seu cadeado e cartão individual",
+                "Todas as etapas anteriores",
+                "As chaves dos cadeados deverão permanecer apenas com os funcionários que estiverem efetuando o bloqueio",
+                "Testar o religamento (energia Zero)"
+            ],
+            "respostaCerta": "Todas as etapas anteriores"
+        },
+        {
+            "pergunta": "Todos funcionários e contratados devem participar do Programa Sempre Alerta que serve para?",
+            "respostas": [
+                "Manter as pessoas ativas durante o trabalho",
+                "Comunicar situações de risco e / ou quase acidentes",
+                "Menosprezar os riscos",
+                "Comunicar problemas de AU",
+                "Melhorar UPDT",
+                "Reduzir problemas de qualidade"
+            ],
+            "respostaCerta": "Comunicar situações de risco e / ou quase acidentes"
+        },
+        {
+            "pergunta": "A Luva impermeável é obrigatória no manuseio produtos químicos em estado Líquido?",
+            "respostas": [
+                "Não",
+                "Sim, sempre",
+                "Posso usar luvas de tecido em função do Químico a ser manuseado",
+                "Não, eu posso usar a luva que estiver disponível no momento da tarefa",
+                "Não preciso de Luvas para manuseio de químicos",
+                "Não, se a atividade for rápida"
+            ],
+            "respostaCerta": "Sim, sempre"
+        },
+        {
+            "pergunta": "Qual alternativa está correta?",
+            "respostas": [
+                "Não obstruir equipamentos de combate a incêndio",
+                "Se for rápido, não precisa de LOTO",
+                "Não é necessário usar placa para identificar piso molhado",
+                "Não é necessário usar corrimão ao subir/descer escadas",
+                "Posso caminhar e usar o celular para conversar e digitar mensagens",
+                "Posso atravessar fora da faixa se não tiver veículo próximo"
+            ],
+            "respostaCerta": "Não obstruir equipamentos de combate a incêndio"
+        },
+        {
+            "pergunta": "Qual ramal de emergência da Enfermaria?",
+            "respostas": [
+                "27",
+                "22",
+                "11",
+                "13",
+                "15",
+                "01"
+            ],
+            "respostaCerta": "27"
+        },
+        {
+            "pergunta": "Quais EPI´s devo usar na área de trabalho e no manuseio de água quente?",
+            "respostas": [
+                "Capacete, óculos de segurança, macacão TYCHEM, bota de segurança, protetor auricular.",
+                "Capacete, óculos de segurança, protetor facial, luva para água quente.",
+                "Apenas luva para água quente",
+                "Bota de segurança e protetor facial",
+                "Capacete, óculos de segurança, protetor facial, luva para água quente, macacão TYCHEM, bota de segurança, protetor auricular.",
+                "Luva para água quente, protetor auricular e toalha"
+            ],
+            "respostaCerta": "Capacete, óculos de segurança, protetor facial, luva para água quente, macacão TYCHEM, bota de segurança, protetor auricular."
+        },
+        {
+            "pergunta": "Ao identificar uma situação de risco ou quase acidente, o que devo fazer?",
+            "respostas": [
+                "Sair correndo e deixar tudo como está;",
+                "Registrar o Sempre Alerta e esperar alguém verificar;",
+                "Seguir a atividade normalmente mesmo com risco;",
+                "Comunicar imediatamente minha liderança e apoiar na melhoria, em seguida registrar o Sempre Alerta;",
+                "Comentar dentro do time e seguir trabalhando de forma insegura;",
+                "Nada, Isso não é minha responsabilidade;"
+            ],
+            "respostaCerta": "Comunicar imediatamente minha liderança e apoiar na melhoria, em seguida registrar o Sempre Alerta;"
+        },
+        {
+            "pergunta": "O que é aumentar o nível de controle?",
+            "respostas": [
+                "Receber mais cobrança dos chefes",
+                "Implementar medidas de engenharia, como por exemplo proteção de máquina, Linhas de vida em telhados",
+                "Apenas treinar os colaboradores",
+                "Apenas fazer procedimentos",
+                "Apenas treinamentos",
+                "Não aumentar o nível de produção"
+            ],
+            "respostaCerta": "Implementar medidas de engenharia, como por exemplo proteção de máquina, Linhas de vida em telhados"
+        },
+        {
+            "pergunta": "O que é HOP ?",
+            "respostas": [
+                "Uma nova filosofia operacional, onde o grande objetivo é buscar o que falhou e não quem falhou.",
+                "Um novo programa de segurança",
+                "O novo marcote da Colgate",
+                "Uma nova ferramenta para buscar erros e culpados",
+                "Um novo programa de FP&R",
+                "É um novo estilo musical"
+            ],
+            "respostaCerta": "Uma nova filosofia operacional, onde o grande objetivo é buscar o que falhou e não quem falhou."
+        },
+        {
+            "pergunta": "Quantos standards FP&R possui?",
+            "respostas": [
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11"
+            ],
+            "respostaCerta": "7"
+        },
+        {
+            "pergunta": "Qual das alternativas abaixo não é um exemplo de controle visual?",
+            "respostas": [
+                "Código de cores para locais a serem lubrificados.",
+                "Indicação do sentido de fluxo nas tubulações.",
+                "Indicação de limites máximos e mínimos.",
+                "Código de paradas da máquina.",
+                "Quadro de ferramentas.",
+                "Indicação do passo de Manutenção Autônoma da linha."
+            ],
+            "respostaCerta": "Quadro de ferramentas."
+        },
+        {
+            "pergunta": "O que significa a sigla FP&R?",
+            "respostas": [
+                "Fiscalização e Planejamento de Fábrica",
+                "Fábrica, produção e Resultados",
+                "Confiabilidade e Desempenho de Fábrica",
+                "Foco em Produção e Resultados",
+                "Confiar e desempenhar na Fábrica",
+                "Formação Profissional e Recursos"
+            ],
+            "respostaCerta": "Fábrica, produção e Resultados"
+        },
+        {
+            "pergunta": "Quais das opções abaixo não é uma ferramenta de grupo de melhoria?",
+            "respostas": [
+                "5 Porquês",
+                "Diagrama de Ishikawa",
+                "6W2H",
+                "DMAIC",
+                "Manutenção Corretiva",
+                "Kaizen"
+            ],
+            "respostaCerta": "Manutenção Corretiva"
+        },
+        {
+            "pergunta": "O Passo 1 de Manutenção Autônoma diz respeito a:",
+            "respostas": [
+                "Limpeza Inicial",
+                "Eliminar áreas inacessíveis.",
+                "Padronizar os procedimentos.",
+                "Inspeções Gerais.",
+                "Inspeções Autônomas.",
+                "Todas as alternativas anteriores."
+            ],
+            "respostaCerta": "Limpeza Inicial"
+        },
+        {
+            "pergunta": "Qual é o papel de FP&R para a fábrica?",
+            "respostas": [
+                "Gerenciar os clientes e fornecedores",
+                "Assegurar a confiabilidade e desempenho dos equipamentos e processos.",
+                "Facilitar a compra de novos equipamentos e máquinas",
+                "Garantir a Flexibilidade e o Padrão de Qualidade.",
+                "Gerenciar a Folha de Pagamento e Recursos Humanos.",
+                "Facilitar a Parceria e Relacionamento com Fornecedores."
+            ],
+            "respostaCerta": "Assegurar a confiabilidade e desempenho dos equipamentos e processos."
+        },
+        {
+            "pergunta": "O programa 5S é composto por:",
+            "respostas": [
+                "Segurança, Qualidade e Produtividade.",
+                "Higiene no Trabalho, Qualidade e Produtividade.",
+                "Padronização, ordenação, Higiene e Qualidade na linha",
+                "Utilização, Ordenação, Limpeza, Padronização e Autodisciplina.",
+                "Segurança, Kaizen e Qualidade na Linha.",
+                "Produtividade, Utilização e Limpeza"
+            ],
+            "respostaCerta": "Utilização, Ordenação, Limpeza, Padronização e Autodisciplina."
+        },
+        {
+            "pergunta": "Quantos “passos” possuímos em Manutenção Autônoma?",
+            "respostas": [
+                "Três passos.",
+                "Quatro passos.",
+                "Cinco passos.",
+                "Seis passos.",
+                "Oito passos.",
+                "Sete passos."
+            ],
+            "respostaCerta": "Oito passos."
+        },
+        {
+            "pergunta": "Quais são os benefícios do paperless (redução da utilização de papel)?",
+            "respostas": [
+                "Maior segurança.",
+                "Histórico de dados.",
+                "Integridade de dados.",
+                "Simplificação do processo.",
+                "Todas as alternativas anteriores.",
+                "Redução de erros de digitação."
+            ],
+            "respostaCerta": "Todas as alternativas anteriores."
+        },
+        {
+            "pergunta": "Qual é o primeiro senso (ou “S”) de 5S?",
+            "respostas": [
+                "Senso de Substituição",
+                "Senso de Limpeza",
+                "Senso de Utilização",
+                "Senso de Justiça",
+                "Senso de Segurança",
+                "Senso crítico"
+            ],
+            "respostaCerta": "Senso de Utilização"
+        },
+        {
+            "pergunta": "Qual é a visão da Colgate?",
+            "respostas": [
+                "Paixão por nutrir e confiar no mundo",
+                "Valorizar um mundo limpo e ser parceiro de todos",
+                "Proteger, curar e nutrir por um mundo mais limpo e saudável.",
+                "Ser um parceiro inspirador e de confiança no mercado.",
+                "Paixão por excelência e agilidade para o crescimento.",
+                "Valorizar grandes inovações que fazem diferença para os consumidores."
+            ],
+            "respostaCerta": "Proteger, curar e nutrir por um mundo mais limpo e saudável."
+        },
+        {
+            "pergunta": "Qual o significado da sigla ALCOA?",
+            "respostas": [
+                "Atributável, Legal, Contemporâneo, Original e Acuracidade",
+                "Atribuido, Legível, Contemporâneo, Original e Ajustado",
+                "Atributável, Legível, Contemporâneo, Original e Acuracidade",
+                "Atributável, Legível, Contemporâneo, Oficial e Acuracidade",
+                "Ajustado, Legível, Confidencial, Organizado e Atualizado",
+                "Atualizado, Legal, Contemporâneo, Original e Acuracidade"
+            ],
+            "respostaCerta": "Atributável, Legível, Contemporâneo, Original e Acuracidade"
+        },
+        {
+            "pergunta": "Qual o significado de GMP / BPF?",
+            "respostas": [
+                "Good Maintenance Practices / Boas Práticas de Manutenção",
+                "Good Manufacturing Practices/ Boas Práticas de Fabricação",
+                "Good Manners Practices/ Práticas de Boas Maneiras",
+                "Good Manual Practices/ Boas Práticas Manuais",
+                "Good Main Practices / Boas principais práticas",
+                "Good Manufacturing Principles / Bons Princípios de Fabricação"
+            ],
+            "respostaCerta": "Good Manufacturing Practices/ Boas Práticas de Fabricação"
+        },
+        {
+            "pergunta": "Quantos são os Standards de Qualidade?",
+            "respostas": [
+                "62",
+                "26",
+                "16",
+                "32",
+                "46",
+                "24"
+            ],
+            "respostaCerta": "26"
+        },
+        {
+            "pergunta": "O que é um recall?",
+            "respostas": [
+                "Recolher/trazer de volta produtos do depósito.",
+                "Segregar material na linha de produção.",
+                "Posto de coleta para recolhimento de produto.",
+                "Devolução obrigatória de um produto não conforme.",
+                "Recolher/trazer de volta produtos dos clientes/consumidores.",
+                "Recolhimento opcional por parte da empresa."
+            ],
+            "respostaCerta": "Recolher/trazer de volta produtos dos clientes/consumidores."
+        },
+        {
+            "pergunta": "Qual a principal função do registro de um documento?",
+            "respostas": [
+                "Gerar papel para arquivo.",
+                "Criar burocracia.",
+                "Dar mais tarefa para operação.",
+                "Comprovar que uma atividade foi realizada.",
+                "Garantir que número do documento está correto é ativo.",
+                "Demonstrar a importância de uma tarefa."
+            ],
+            "respostaCerta": "Comprovar que uma atividade foi realizada."
+        },
+        {
+            "pergunta": "Qual a importância de checar a BOM dos materiais durante o processo de produção?",
+            "respostas": [
+                "Garantir que o produto não tem defeitos.",
+                "Aumentar a produtividade da linha.",
+                "Garantir que estou utilizando o material correto.",
+                "Aumentar a confiança do consumidor.",
+                "Garantir que o material está aprovado para uso.",
+                "Evitar uso de material vencido."
+            ],
+            "respostaCerta": "Garantir que estou utilizando o material correto."
+        },
+        {
+            "pergunta": "O que é um POP e qual seu principal objetivo?",
+            "respostas": [
+                "Parada Operacional. Seu objetivo é indicar quando parar uma máquina.",
+                "Procedimento de Operação Padrão. Seu objetivo é instruir os funcionários sobre como executar corretamente uma tarefa.",
+                "Plano Operacional. Seu objetivo é instruir como manter a área operando.",
+                "Procedimento Operacional. Seu objetivo é indicar o funcionamento de uma máquina ou equipamento.",
+                "Parada Prática de Operação. Seu objetivo é indicar quando parar a operação.",
+                "Plano de Operação Padrão. Seu objetivo é indicar o plano de funcionamento de uma máquina."
+            ],
+            "respostaCerta": "Procedimento de Operação Padrão. Seu objetivo é instruir os funcionários sobre como executar corretamente uma tarefa."
+        },
+        {
+            "pergunta": "O que é ETQ?",
+            "respostas": [
+                "Novo Sistema de Qualidade para o gerenciamento de investigações, CAPA e desvios.",
+                "Novo processo de liberação.",
+                "Eu tenho qualidade.",
+                "Sistema para o gerenciamento de reclamação de consumidor.",
+                "Comportamento assertivo.",
+                "Estudo de treinamento efetivo."
+            ],
+            "respostaCerta": "Novo Sistema de Qualidade para o gerenciamento de investigações, CAPA e desvios."
+        },
+        {
+            "pergunta": "Cite um procedimento que devemos seguir para atender o QS 14",
+            "respostas": [
+                "Utilizar somente MP aprovadas, liberar os batches com os resultados fora da especificação.",
+                "Realizando o QR2 e peso, além de evitarmos perdas e multas do INMETRO, no caso de peso, garantimos a Qualidade do produto com o QR2.",
+                "Retirar amostras (retenção, arquivo, laboratório e micro) anualmente.",
+                "Documentar de forma resumida os problemas que ocorrem durante o processo.",
+                "Segregar o material somente se a qualidade descobrir que tem problema.",
+                "Garantir que às MP estejam dentro do prazo de validade considerando a tolerância de 1 mês após a validade."
+            ],
+            "respostaCerta": "Documentar de forma resumida os problemas que ocorrem durante o processo."
+        },
+        {
+            "pergunta": "Qual procedimento abaixo faz parte das boas práticas de documentação?",
+            "respostas": [
+                "Utilizar uniformes limpos, lavar bem as mãos, manter seu local de trabalho limpo e organizado. Tudo isso faz parte do programa de GMP e atende ao padrão QS.",
+                "Efetuar a limpeza e/ou sanitização da linha.",
+                "Fazer as análises de QR2 e peso.",
+                "Efetuar todos os registros sem rasuras, sem espaços em branco, anular corretamente os campos e escrever com letra legível.",
+                "Utilizar o sistema FIFO (First In First Out).",
+                "Manter os materiais em pallets longe do contato com o piso."
+            ],
+            "respostaCerta": "Efetuar todos os registros sem rasuras, sem espaços em branco, anular corretamente os campos e escrever com letra legível."
+        },
+        {
+            "pergunta": "Promover o uso dos materiais por ordem de entrada FIFO (First-in , First-out= primeiro que entra é o primeiro que sai) atende a qual dos Quality Standards abaixo:",
+            "respostas": [
+                "Estocagem e manuseio",
+                "Logística",
+                "Documentação",
+                "Treinamento",
+                "Administração",
+                "Gestão de tempo"
+            ],
+            "respostaCerta": "Estocagem e manuseio"
+        }
+    ]
+}

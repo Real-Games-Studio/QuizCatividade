@@ -1,0 +1,11 @@
+{
+    "tituloJogo": "QUIZ AGILIDADE",
+    "textoVitoria": "Parabéns!<br>Você conseguiu <br>",
+    "tempo": 60,
+    "combos": [
+        5,
+        10,
+        15,
+        20
+    ]
+}
