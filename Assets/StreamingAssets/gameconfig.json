@@ -1,7 +1,7 @@
 {
     "tituloJogo": "QUIZ AGILIDADE",
     "textoVitoria": "Parabéns!<br>Você conseguiu <br>",
-    "tempo": 3,
+    "tempo": 60,
     "tempoParaReniciar": 10,
     "combos": [
         5,

@@ -5,29 +5,29 @@ using UnityEngine.UI;
 
 public class InputManager : MonoBehaviour
 {
-    [SerializeField] private InputAction _anyButtonsController;
-    [SerializeField] private InputAction[] _buttonsControllers;
-
     [SerializeField] private Button _initialScreenbutton;
     [SerializeField] private Button[] _button;
+    [SerializeField] private float requiredHoldTime = 5f;
+
     private bool canPress = false;
+    private float timer;
+    private float timerRestart;
+
     public bool CanPress { get => canPress; set => canPress = value; }
-
-    private void Awake()
-    {
-        _anyButtonsController.Enable();
-
-        foreach (InputAction input in _buttonsControllers)
-            input.Enable();
-    }
 
     private void Update()
     {
-        if ((CheckKeyPressed() || CheckOldButtonPressed()) && _initialScreenbutton.enabled)
+        if ((CheckKeyPressed() || CheckOldButtonPressedWithTimer()) && _initialScreenbutton.enabled)
         {
             _initialScreenbutton.onClick.Invoke();
             _initialScreenbutton.enabled = false;
         }
+
+        if (RestartSceneInput())
+        {
+            Managers.Instance.SceneManagement.RestartScene();
+        }
+
 
         if (CanPress)
         {
@@ -37,19 +37,14 @@ public class InputManager : MonoBehaviour
             InputForKeyboard(3, KeyCode.Alpha4);
             InputForKeyboard(4, KeyCode.Alpha5);
 
-            // InputForController(0, 0);
-            // InputForController(1, 1);
-            // InputForController(2, 2);
-            // InputForController(3, 3);
-            // InputForController(4, 4);
-
             InputForControllerOld();
-            // InputForControllerOld(1, "Fire2");
-            // InputForControllerOld(2, "Fire3");
-            // InputForControllerOld(3, "Jump");
-
         }
 
+        if (Managers.Instance.GameManager.FinalScreen && CheckOldButtonPressed())
+        {
+            Managers.Instance.SceneManagement.RestartScene();
+            Managers.Instance.GameManager.FinalScreen = false;
+        }
 
 
     }
@@ -60,14 +55,42 @@ public class InputManager : MonoBehaviour
         else return false;
     }
 
-    // private bool CheckButtonPressed()
-    // {
-    //     if (_anyButtonsController.ReadValue<float>() > .5f) return true;
-    //     else return false;
-    // }
+    private bool RestartSceneInput()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            timerRestart += Time.deltaTime;
+            if (timerRestart > 5f)
+            {
+                timerRestart = 0f;
+                return true;
+            }
+        }
+        else return false;
+
+        return false;
+    }
+    private bool CheckOldButtonPressedWithTimer()
+    {
+        if (Input.GetButton("Fire1") || Input.GetButton("Fire2") || Input.GetButton("Fire3") || Input.GetButton("Jump") || Input.GetButton("SLT") || Input.GetButton("SRT") || Input.GetButton("SLT2") || Input.GetButton("SRT2") || Input.GetButton("SRT3"))
+        {
+            timer += Time.deltaTime;
+            if (timer > requiredHoldTime)
+            {
+                timer = 0f;
+                return true;
+            }
+        }
+        else return false;
+
+        return false;
+    }
     private bool CheckOldButtonPressed()
     {
-        if (Input.GetButton("Fire1") || Input.GetButton("Fire2") || Input.GetButton("Fire3") || Input.GetButton("Jump") || Input.GetButton("SLT") || Input.GetButton("SRT") || Input.GetButton("SLT2") || Input.GetButton("SRT2") || Input.GetButton("SRT3")) return true;
+        if (Input.GetButton("Fire1") || Input.GetButton("Fire2") || Input.GetButton("Fire3") || Input.GetButton("Jump") || Input.GetButton("SLT") || Input.GetButton("SRT") || Input.GetButton("SLT2") || Input.GetButton("SRT2") || Input.GetButton("SRT3"))
+        {
+            return true;
+        }
         else return false;
     }
 

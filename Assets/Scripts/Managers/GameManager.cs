@@ -15,16 +15,23 @@ public class GameManager : MonoBehaviour
     [SerializeField] private MMF_Player _reloadSceneFeel;
 
     private bool canStartTimer = false;
+    private bool finalScreen = false;
     public bool CanStartTimer { get => canStartTimer; set => canStartTimer = value; }
+    public bool FinalScreen { get => finalScreen; set => finalScreen = value; }
 
     void Start()
     {
         _titleGameText.text = _gameConfig.TituloJogo;
-        _reloadSceneFeel.InitialDelay = _gameConfig.TempoParaReniciar;
+        _reloadSceneFeel.GetFeedbacksOfType<MMF_Events>()[0].SetInitialDelay(_gameConfig.TempoParaReniciar);
     }
 
     public void UpdateWinText()
     {
         _winText.text = _gameConfig.TextoVitoria + Managers.Instance.QuestionsManager.Score + " pontos!";
+    }
+
+    public void TurnOnFinalScreen()
+    {
+        finalScreen = true;
     }
 }

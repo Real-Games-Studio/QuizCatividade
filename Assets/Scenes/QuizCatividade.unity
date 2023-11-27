@@ -1982,7 +1982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -747.00024
+      value: -747.0003
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5853,7 +5853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -307.0002
+      value: -307.00018
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6302,7 +6302,7 @@ MonoBehaviour:
   RemapRangeFalloff: {x: 0, y: 1}
   IgnoreRangeEvents: 0
   CooldownDuration: 0
-  InitialDelay: 5
+  InitialDelay: 0
   CanPlay: 1
   CanPlayWhileAlreadyPlaying: 1
   ChanceToPlay: 100
@@ -6334,6 +6334,7 @@ MonoBehaviour:
   DebugActive: 0
   FeedbacksList:
   - rid: 6258842982048858112
+  - rid: 6258843001677414400
   KeepPlayModeChanges: 0
   PerformanceMode: 0
   StopFeedbacksOnDisable: 0
@@ -6415,6 +6416,98 @@ MonoBehaviour:
             - m_Target: {fileID: 942010674}
               m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
               m_MethodName: RestartScene
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+        StopEvents:
+          m_PersistentCalls:
+            m_Calls: []
+        InitializationEvents:
+          m_PersistentCalls:
+            m_Calls: []
+        ResetEvents:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 6258843001677414400
+      type: {class: MMF_Events, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
+      data:
+        Active: 1
+        UniqueID: -2028947239
+        Label: Unity Events
+        ChannelMode: 0
+        Channel: 0
+        MMChannelDefinition: {fileID: 0}
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 2
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        AutomatedTargetAcquisition:
+          Mode: 0
+          ChildIndex: 0
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        UseRange: 0
+        RangeDistance: 5
+        UseRangeFalloff: 0
+        RangeFalloff:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        RemapRangeFalloff: {x: 0, y: 1}
+        Owner: {fileID: 1825036846}
+        DebugActive: 0
+        PlayEvents:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 34713192}
+              m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+              m_MethodName: TurnOnFinalScreen
               m_Mode: 1
               m_Arguments:
                 m_ObjectArgument: {fileID: 0}
@@ -10049,7 +10142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -696.0001
+      value: -696.0002
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
