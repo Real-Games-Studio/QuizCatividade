@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using MoreMountains.Feedbacks;
 using TMPro;
 using UnityEngine;
@@ -40,14 +41,23 @@ public class QuestionsManager : MonoBehaviour
     void Start()
     {
         if (_questionNumberSorteds.Count < _questionContainer.Perguntas.Length)
+        {
             do
+            {
                 randomIndex = Random.Range(0, _questionContainer.Perguntas.Length);
+            }
             while (_questionNumberSorteds.Contains(randomIndex));
 
-        // _questionTitle.text = $"Pergunta {_questionNumber + 1}";
+            _questionNumberSorteds.Add(randomIndex);
+        }
+        else
+        {
+            Managers.Instance.GameManager.SetWinState();
+        }
+
         lastRandomIndex = randomIndex;
 
-        _questionText.text = _questionContainer.Perguntas[lastRandomIndex].Pergunta;
+        _questionText.text = _questionContainer.Perguntas[randomIndex].Pergunta;
         UpdatePoints();
 
         for (int i = 0; i < _answers.Length; i++)

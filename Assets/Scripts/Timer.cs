@@ -13,7 +13,6 @@ public class Timer : MonoBehaviour
 #endif
 
     [SerializeField] private TextMeshProUGUI _timerText;
-    [SerializeField] private GameObject _gameScreenHolder, _finalScreenHolder;
     private float timer;
 
     [SerializeField] private Color _inicialColor, _midColor, _endColor;
@@ -36,10 +35,7 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                _finalScreenHolder.SetActive(true);
-                _gameScreenHolder.SetActive(false);
-                Managers.Instance.GameManager.UpdateWinText();
-                Managers.Instance.GameManager.CanStartTimer = false;
+                Managers.Instance.GameManager.SetWinState();
             }
     }
 

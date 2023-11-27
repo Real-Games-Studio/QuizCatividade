@@ -170,6 +170,8 @@ MonoBehaviour:
   _titleGameText: {fileID: 985135792}
   _winText: {fileID: 1850365753}
   _reloadSceneFeel: {fileID: 1825036846}
+  _gameScreenHolder: {fileID: 1244340294}
+  _finalScreenHolder: {fileID: 430006054}
 --- !u!1 &52043869
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,8 +240,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timerText: {fileID: 1550738758}
-  _gameScreenHolder: {fileID: 1244340294}
-  _finalScreenHolder: {fileID: 430006054}
   _inicialColor: {r: 0.3254902, g: 0.67058825, b: 0.47450984, a: 1}
   _midColor: {r: 0.99607843, g: 0.8730214, b: 0.25490195, a: 1}
   _endColor: {r: 0.8784314, g: 0.28235295, b: 0.3064752, a: 1}
@@ -1982,7 +1982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -747.0003
+      value: -747.0004
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4164,160 +4164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a363b8cf9518ba143bc1338ef01b6262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _anyButtonsController:
-    m_Name: Any Buttons Controller
-    m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: a2f804cf-0729-4074-8d71-a7ebce9bb4a5
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: abe78710-9952-4ecf-9015-1e710ce7529e
-      m_Path: <Gamepad>/buttonWest
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Any Buttons Controller
-      m_Flags: 0
-    - m_Name: 
-      m_Id: b40342c6-6997-4934-9923-a15c057c20bb
-      m_Path: <Gamepad>/buttonSouth
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Any Buttons Controller
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 131061c0-1b14-45b2-98a8-f3dbc3bfcbfd
-      m_Path: <Gamepad>/buttonEast
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Any Buttons Controller
-      m_Flags: 0
-    - m_Name: 
-      m_Id: a830c103-a385-4795-80a7-25decef069f8
-      m_Path: <Gamepad>/buttonNorth
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Any Buttons Controller
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 2c666dce-79ab-4883-a9c8-8955ebfa880b
-      m_Path: <Gamepad>/start
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Any Buttons Controller
-      m_Flags: 0
-    - m_Name: 
-      m_Id: ac473ee9-0ff4-4f24-826b-36300ee28ce4
-      m_Path: <Gamepad>/select
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Any Buttons Controller
-      m_Flags: 0
-    m_Flags: 0
-  _buttonsControllers:
-  - m_Name: Element 0
-    m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: 321ac075-12f2-4672-b8e4-f2c74d8ac5a9
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 459a255b-9453-44c5-90ca-1e5a62a5a02c
-      m_Path: <Gamepad>/buttonWest
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Element 0
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Input Action
-    m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: 989fd610-d03d-4d53-979c-db1ddc238f91
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 4c0837d6-db34-4137-aa98-825c65a8336f
-      m_Path: <Gamepad>/buttonSouth
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Input Action
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Input Action
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 624f826b-c9d4-410e-a4f8-490c828bbb6a
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 5dbfa782-31a4-41c0-993f-dfd614b33c8c
-      m_Path: <Gamepad>/buttonEast
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Input Action
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Input Action
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 2ddca26f-db73-4a2a-a4e1-2c4ce4fb4952
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 8e60fe33-1b3d-4e7b-9008-b78c4859565b
-      m_Path: <Gamepad>/buttonNorth
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Input Action
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Input Action
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: b311ab76-eae6-41bb-9b0a-90daa1ccc6a6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: b59cd09d-304a-437e-9b50-3464b1852d49
-      m_Path: <Gamepad>/start
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Input Action
-      m_Flags: 0
-    m_Flags: 0
-  - m_Name: Input Action
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 73f27c40-dcc6-4112-be9e-80ffa05080e7
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 00dbc91f-44b2-4c93-b21c-d3273581a114
-      m_Path: <Gamepad>/select
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Input Action
-      m_Flags: 0
-    m_Flags: 0
   _initialScreenbutton: {fileID: 252322638}
   _button:
   - {fileID: 966946753}
@@ -4325,6 +4171,7 @@ MonoBehaviour:
   - {fileID: 1976236886}
   - {fileID: 1586257474}
   - {fileID: 961780555}
+  requiredHoldTime: 1
 --- !u!1 &1229226414
 GameObject:
   m_ObjectHideFlags: 0
@@ -10142,7 +9989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -696.0002
+      value: -696.0003
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

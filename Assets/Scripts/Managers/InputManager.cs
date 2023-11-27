@@ -7,7 +7,7 @@ public class InputManager : MonoBehaviour
 {
     [SerializeField] private Button _initialScreenbutton;
     [SerializeField] private Button[] _button;
-    [SerializeField] private float requiredHoldTime = 5f;
+    [SerializeField] private float requiredHoldTime;
 
     private bool canPress = false;
     private float timer;

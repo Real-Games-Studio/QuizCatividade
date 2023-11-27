@@ -13,13 +13,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _titleGameText;
     [SerializeField] private TextMeshProUGUI _winText;
     [SerializeField] private MMF_Player _reloadSceneFeel;
+    [SerializeField] private GameObject _gameScreenHolder, _finalScreenHolder;
 
     private bool canStartTimer = false;
     private bool finalScreen = false;
     public bool CanStartTimer { get => canStartTimer; set => canStartTimer = value; }
     public bool FinalScreen { get => finalScreen; set => finalScreen = value; }
 
-    void Start()
+    public void Start()
     {
         _titleGameText.text = _gameConfig.TituloJogo;
         _reloadSceneFeel.GetFeedbacksOfType<MMF_Events>()[0].SetInitialDelay(_gameConfig.TempoParaReniciar);
@@ -33,5 +34,13 @@ public class GameManager : MonoBehaviour
     public void TurnOnFinalScreen()
     {
         finalScreen = true;
+    }
+
+    public void SetWinState()
+    {
+        _finalScreenHolder.SetActive(true);
+        _gameScreenHolder.SetActive(false);
+        Managers.Instance.GameManager.UpdateWinText();
+        Managers.Instance.GameManager.CanStartTimer = false;
     }
 }
