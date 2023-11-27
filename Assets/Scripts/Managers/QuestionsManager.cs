@@ -85,19 +85,17 @@ public class QuestionsManager : MonoBehaviour
             for (int i = 0; i < _answers.Length; i++)
                 _answers[i].CanPress(false);
 
-
-            Debug.Log("certa!");
         }
         else
         {
             if (Score >= 2) Score -= 2;
             _comboCount = 0;
-            Managers.Instance.FeelManager.PlayFeelRemovePoints();
             button.WrongFeel.PlayFeedbacks();
-            Managers.Instance.SoundManager.PlayWrong();
 
-            Debug.Log("errada!");
+            Managers.Instance.FeelManager.PlayFeelRemovePoints();
+            Managers.Instance.SoundManager.PlayWrong();
         }
+
         UpdatePoints();
     }
 
