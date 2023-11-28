@@ -30,10 +30,10 @@ public class InputManager : MonoBehaviour
             Debug.Log("rodei");
         }
 
-        // if (CheckRestartSceneInput())
-        // {
-        //     Managers.Instance.SceneManagement.RestartScene();
-        // }
+        if (CheckRestartSceneInput())
+        {
+            Managers.Instance.SceneManagement.RestartScene();
+        }
 
 
         if (CanPress)
@@ -44,18 +44,18 @@ public class InputManager : MonoBehaviour
             InputForKeyboard(3, KeyCode.Alpha4);
             InputForKeyboard(4, KeyCode.Alpha5);
 
-            // InputForController(0, "FireOne");
+            InputForController(0, "FireOne");
             InputForController(1, "Fire2");
             InputForController(2, "Fire3");
             InputForController(3, "Jump");
-            // InputForLastButton();
+            InputForLastButton();
         }
 
-        // if (Managers.Instance.GameManager.FinalScreen && CheckOldButtonPressed())
-        // {
-        //     Managers.Instance.SceneManagement.RestartScene();
-        //     Managers.Instance.GameManager.FinalScreen = false;
-        // }
+        if (Managers.Instance.GameManager.FinalScreen && CheckOldButtonPressed())
+        {
+            Managers.Instance.SceneManagement.RestartScene();
+            Managers.Instance.GameManager.FinalScreen = false;
+        }
     }
 
     private void InputForKeyboard(int bntIndex, KeyCode keyCode)
