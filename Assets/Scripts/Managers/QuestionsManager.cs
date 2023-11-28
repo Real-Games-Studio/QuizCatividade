@@ -36,44 +36,39 @@ public class QuestionsManager : MonoBehaviour
         for (int i = 5; i > _questionContainer.NumberOfAnswers - 1; i--)
             _answers[i].gameObject.SetActive(false);
 
+        _questionContainer.Perguntas.Sort((a, b) => Random.Range(-1, 2));
     }
 
     void Start()
     {
-        if (_questionNumberSorteds.Count < _questionContainer.Perguntas.Length)
-        {
-            do
-            {
-                randomIndex = Random.Range(0, _questionContainer.Perguntas.Length);
-            }
-            while (_questionNumberSorteds.Contains(randomIndex));
+        UpdateQuestion();
+    }
 
-            _questionNumberSorteds.Add(randomIndex);
-        }
-        else
+    public void UpdateQuestion()
+    {
+        if (_questionNumber == _questionContainer.Perguntas.Count)
         {
             Managers.Instance.GameManager.SetWinState();
+            return;
         }
 
-        lastRandomIndex = randomIndex;
-
-        _questionText.text = _questionContainer.Perguntas[randomIndex].Pergunta;
-        UpdatePoints();
+        _questionText.text = _questionContainer.Perguntas[_questionNumber].Pergunta;
 
         for (int i = 0; i < _answers.Length; i++)
-            _answers[i].Text.text = _questionContainer.Perguntas[randomIndex].Respostas[i];
+            _answers[i].Text.text = _questionContainer.Perguntas[_questionNumber].Respostas[i];
 
         _currentComboNumber = _comboContainer.Combos[_comboIndex];
+
+        UpdatePoints();
         Managers.Instance.FeelManager.PlayFeelButton();
 
         for (int i = 0; i < _answers.Length; i++)
             _answers[i].CanPress(true);
-
     }
 
     public void CheckAnswer(ButtonAUX button)
     {
-        if (_questionContainer.Perguntas[lastRandomIndex].RespostaCerta == button.Text.text)
+        if (_questionContainer.Perguntas[_questionNumber].RespostaCerta == button.Text.text)
         {
             _questionNumber++;
             Score += 10;
@@ -119,7 +114,7 @@ public class QuestionsManager : MonoBehaviour
     }
     public void NextQuestion()
     {
-        Start();
+        UpdateQuestion();
     }
 }
 
