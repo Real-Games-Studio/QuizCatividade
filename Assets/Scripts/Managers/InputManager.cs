@@ -68,7 +68,7 @@ public class InputManager : MonoBehaviour
         {
             if (_buttons[bntIndex].interactable)
             {
-                // _buttons[bntIndex].onClick.Invoke();
+                _buttons[bntIndex].onClick.Invoke();
                 ExecuteEvents.Execute(_buttons[bntIndex].gameObject, new PointerEventData(EventSystem.current), ExecuteEvents.pointerUpHandler);
             }
         }
