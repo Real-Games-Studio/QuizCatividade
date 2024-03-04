@@ -2,7 +2,7 @@
     "numberOfAnswers": 5,
     "perguntas": [
         {
-            "pergunta": "Na hora de descartar tambores e bombonas você deve?",
+            "pergunta": "Na hora de descartar tambores e bombonas você deve:",
             "respostas": [
                 "Retirar o nome da Colgate das embalagens",
                 "Manter no nome do produto químico que tinha na embalagem",
@@ -31,8 +31,8 @@
                 "Localizar o Swis de LOTO do equipamento",
                 "Identificar as fontes de energias",
                 "Cada funcionário deverá colocar seu cadeado e cartão individual",
-                "Todas as etapas anteriores",
                 "As chaves dos cadeados deverão permanecer apenas com os funcionários que estiverem efetuando o bloqueio",
+                "Todas as etapas anteriores",
                 "Testar o religamento (energia Zero)"
             ],
             "respostaCerta": "Todas as etapas anteriores"
@@ -83,7 +83,7 @@
                 "15",
                 "01"
             ],
-            "respostaCerta": "27"
+            "respostaCerta": "22"
         },
         {
             "pergunta": "Quais EPI´s devo usar na área de trabalho e no manuseio de água quente?",
@@ -140,10 +140,10 @@
                 "7",
                 "8",
                 "9",
-                "10",
-                "11"
+                "11",
+                "10"
             ],
-            "respostaCerta": "7"
+            "respostaCerta": "11"
         },
         {
             "pergunta": "Qual das alternativas abaixo não é um exemplo de controle visual?",
@@ -155,7 +155,7 @@
                 "Quadro de ferramentas.",
                 "Indicação do passo de Manutenção Autônoma da linha."
             ],
-            "respostaCerta": "Quadro de ferramentas."
+            "respostaCerta": "Código de paradas da máquina."
         },
         {
             "pergunta": "O que significa a sigla FP&R?",
@@ -167,7 +167,7 @@
                 "Confiar e desempenhar na Fábrica",
                 "Formação Profissional e Recursos"
             ],
-            "respostaCerta": "Fábrica, produção e Resultados"
+            "respostaCerta": "Confiabilidade e Desempenho de Fábrica"
         },
         {
             "pergunta": "Quais das opções abaixo não é uma ferramenta de grupo de melhoria?",
@@ -227,7 +227,7 @@
                 "Oito passos.",
                 "Sete passos."
             ],
-            "respostaCerta": "Oito passos."
+            "respostaCerta": "Cinco passos."
         },
         {
             "pergunta": "Quais são os benefícios do paperless (redução da utilização de papel)?",
@@ -263,7 +263,7 @@
                 "Paixão por excelência e agilidade para o crescimento.",
                 "Valorizar grandes inovações que fazem diferença para os consumidores."
             ],
-            "respostaCerta": "Proteger, curar e nutrir por um mundo mais limpo e saudável."
+            "respostaCerta": "Paixão por excelência e agilidade para o crescimento."
         },
         {
             "pergunta": "Qual o significado da sigla ALCOA?",
@@ -371,7 +371,7 @@
                 "Segregar o material somente se a qualidade descobrir que tem problema.",
                 "Garantir que às MP estejam dentro do prazo de validade considerando a tolerância de 1 mês após a validade."
             ],
-            "respostaCerta": "Documentar de forma resumida os problemas que ocorrem durante o processo."
+            "respostaCerta": "Realizando o QR2 e peso, além de evitarmos perdas e multas do INMETRO, no caso de peso, garantimos a Qualidade do produto com o QR2."
         },
         {
             "pergunta": "Qual procedimento abaixo faz parte das boas práticas de documentação?",

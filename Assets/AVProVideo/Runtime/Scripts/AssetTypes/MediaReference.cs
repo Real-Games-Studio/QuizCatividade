@@ -80,7 +80,7 @@ namespace RenderHeads.Media.AVProVideo
 			{
 				result = this;
 			}
-
+			
 			return result;
 		}
 

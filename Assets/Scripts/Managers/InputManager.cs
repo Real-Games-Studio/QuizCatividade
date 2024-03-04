@@ -20,7 +20,6 @@ public class InputManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
-
     private void Update()
     {
         if ((CheckKeyPressed() || CheckOldButtonPressedWithTimer()) && _initialScreenbutton.enabled)
@@ -78,6 +77,8 @@ public class InputManager : MonoBehaviour
     {
         if (Input.GetButtonDown(buttonName))
         {
+            LockAllButtons(buttonIndex);
+
             if (_buttons[buttonIndex].interactable) ExecuteEvents.Execute(_buttons[buttonIndex].gameObject, new PointerEventData(EventSystem.current), ExecuteEvents.pointerDownHandler);
         }
         if (Input.GetButtonUp(buttonName))
@@ -105,6 +106,19 @@ public class InputManager : MonoBehaviour
         }
 
     }
+
+    private void LockAllButtons(int buttonIndex)
+    {
+        for (int i = 0; i < _buttons.Length; i++)
+            if (i != buttonIndex) _buttons[i].interactable = false;
+    }
+    public void UnlockAllButtons()
+    {
+        for (int i = 0; i < _buttons.Length; i++)
+            _buttons[i].interactable = true;
+    }
+
+
     private bool CheckKeyPressed()
     {
         if (Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Alpha2) || Input.GetKey(KeyCode.Alpha3) || Input.GetKey(KeyCode.Alpha4) || Input.GetKey(KeyCode.Alpha5)) return true;

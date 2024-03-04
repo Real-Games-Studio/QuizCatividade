@@ -46,6 +46,11 @@ public class QuestionsManager : MonoBehaviour
 
     public void UpdateQuestion()
     {
+        for (int i = 0; i < _questionContainer.Perguntas.Count; i++)
+        {
+            Debug.Log(_questionContainer.Perguntas[i].Pergunta);
+        }
+
         if (_questionNumber == _questionContainer.Perguntas.Count)
         {
             Managers.Instance.GameManager.SetWinState();
@@ -68,6 +73,8 @@ public class QuestionsManager : MonoBehaviour
 
     public void CheckAnswer(ButtonAUX button)
     {
+        Managers.Instance.InputManager.UnlockAllButtons();
+
         if (_questionContainer.Perguntas[_questionNumber].RespostaCerta == button.Text.text)
         {
             _questionNumber++;
