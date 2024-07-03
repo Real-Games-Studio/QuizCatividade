@@ -1,3 +1,4 @@
+using System;
 using MoreMountains.Feedbacks;
 using TMPro;
 using UnityEngine;
@@ -42,5 +43,8 @@ public class GameManager : MonoBehaviour
         _gameScreenHolder.SetActive(false);
         Managers.Instance.GameManager.UpdateWinText();
         Managers.Instance.GameManager.CanStartTimer = false;
+        
+        Managers.Instance.QuestionsManager.EndTime = DateTime.Now;
+        Managers.Instance.QuestionsManager.SaveResultsToCSV();
     }
 }
