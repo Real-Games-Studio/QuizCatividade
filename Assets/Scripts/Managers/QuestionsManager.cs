@@ -18,9 +18,7 @@ public class QuestionsManager : MonoBehaviour
 #endif
 
     private int _questionNumber = 0;
-    private List<int> _questionNumberSorteds = new List<int>();
-    private int randomIndex;
-    private int lastRandomIndex = -1;
+    private int wrongChoices = 0;
     private int _comboCount;
     private int _currentComboNumber, _comboIndex;
     private int _score = 0;
@@ -53,10 +51,10 @@ public class QuestionsManager : MonoBehaviour
 
     public void UpdateQuestion()
     {
-        for (int i = 0; i < _questionContainer.Perguntas.Count; i++)
-        {
-            Debug.Log(_questionContainer.Perguntas[i].Pergunta);
-        }
+        // for (int i = 0; i < _questionContainer.Perguntas.Count; i++)
+        // {
+        //     Debug.Log(_questionContainer.Perguntas[i].Pergunta);
+        // }
 
         if (_questionNumber == _questionContainer.Perguntas.Count)
         {
@@ -83,13 +81,11 @@ public class QuestionsManager : MonoBehaviour
     public void CheckAnswer(ButtonAUX button)
     {
         Managers.Instance.InputManager.UnlockAllButtons();
-        int questionScore = 0;
 
         if (_questionContainer.Perguntas[_questionNumber].RespostaCerta == button.Text.text)
         {
             _questionNumber++;
-            questionScore = 10;
-            Score += questionScore;
+            Score += 10;
             button.CorrectFeel.PlayFeedbacks();
             CheckCombo();
             Managers.Instance.FeelManager.PlayFeelAddPoints();
@@ -97,19 +93,24 @@ public class QuestionsManager : MonoBehaviour
 
             for (int i = 0; i < _answers.Length; i++)
                 _answers[i].CanPress(false);
+
+            Debug.Log("chamei");
+            _questionScores.Add(10 - (wrongChoices * 2));
+            wrongChoices = 0;
         }
         else
         {
-            questionScore = Score >= 2 ? -2 : 0;
-            Score += questionScore;
+            Score -= 2;
             _comboCount = 0;
             button.WrongFeel.PlayFeedbacks();
+            wrongChoices++;
 
             Managers.Instance.FeelManager.PlayFeelRemovePoints();
             Managers.Instance.SoundManager.PlayWrong();
         }
 
-        _questionScores.Add(questionScore);
+
+
         UpdatePoints();
     }
 
@@ -138,7 +139,7 @@ public class QuestionsManager : MonoBehaviour
 
     public void SaveResultsToCSV()
     {
-        string path = Path.Combine(Application.dataPath, "results.csv");
+        string path = Path.Combine(Application.dataPath, "../results.csv");
         string delimiter = ",";
 
         bool fileExists = File.Exists(path);
@@ -147,7 +148,7 @@ public class QuestionsManager : MonoBehaviour
         {
             if (!fileExists)
             {
-                writer.WriteLine("Session" + delimiter + "StartTime" + delimiter + "EndTime" + delimiter + "TotalScore" + delimiter + string.Join(delimiter, Enumerable.Range(1, _questionScores.Count).Select(i => "Question" + i + "Score")));
+                writer.WriteLine("Session" + delimiter + "StartTime" + delimiter + "EndTime" + delimiter + "TotalScore" + delimiter + string.Join(delimiter, Enumerable.Range(1, _questionContainer.Perguntas.Count).Select(i => "Question" + i + "Score")));
             }
 
             string[] results = new string[_questionScores.Count + 4];
@@ -155,6 +156,7 @@ public class QuestionsManager : MonoBehaviour
             results[1] = _startTime.ToString("o");
             results[2] = _endTime.ToString("o");
             results[3] = Score.ToString();
+
             for (int i = 0; i < _questionScores.Count; i++)
             {
                 results[i + 4] = _questionScores[i].ToString();

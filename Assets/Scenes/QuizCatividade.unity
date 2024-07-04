@@ -1093,7 +1093,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 393938980}
-  - component: {fileID: 393938979}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1101,18 +1100,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &393938979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393938978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfc7f6c67beaa0c4ba589841b063971e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &393938980
 Transform:
   m_ObjectHideFlags: 0
@@ -2191,7 +2178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -747.0004
+      value: -747.00055
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2245,7 +2232,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4911445933274394735, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8328,7 +8316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -437
+      value: -437.00006
       objectReference: {fileID: 0}
     - target: {fileID: 7199795077238489791, guid: 6f3385a0c367a9a4aaa52795de21a53e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
