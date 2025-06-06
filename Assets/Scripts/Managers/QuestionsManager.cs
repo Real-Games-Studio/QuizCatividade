@@ -100,7 +100,7 @@ public class QuestionsManager : MonoBehaviour
         }
         else
         {
-            Score -= 2;
+            Score -= Score == 0 ? 0 : 2;
             _comboCount = 0;
             button.WrongFeel.PlayFeedbacks();
             wrongChoices++;
